@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Data Type
+        </title>
+        <script>
+            let x1 = 34.00;
+            let x2 = 37;
+            let x3 = 3.14;
+            document.getElementById("a1").innerHTML = x1 + "<br>" + x2 + "<br>" + x3;
+
+            const cars = ["BMW","Tesla","Rolls Royce"];
+            document.getElementById("a2").innerHTML = cars[0];
+
+            const person = {
+                firstName : "John",
+                lastName  : "Doe",
+                age     : 50,
+                eyeColor  : "blue"
+            };
+            document.getElementById("a3").innerHTML = person.firstName + " age is " + person.age;
+        </script>
+    </head>
+    <body>
+        <p id="a1"></p>
+        <br>
+        <p id="a2"></p>
+        <br>
+        <p id="a3"></p>
+    </body>
+</html>

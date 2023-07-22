@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+		<title>
+			oncontextmenu
+		</title>
+		</style>
+	</head>
+	<body align="center" >
+		<div oncontextmenu="show_image()">
+			<img id="d" src="image/1.jpeg">
+		</div>
+		<p>Right click on the image to perform oncontextmenu</p>
+		<script>
+			function show_image()
+			{
+				document.getElementById("d").src="image/cat.png" 
+			}
+		</script>
+	</body>
+</html>

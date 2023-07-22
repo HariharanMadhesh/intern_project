@@ -1,0 +1,29 @@
+<!DOCTYPE html >
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<title>
+            onsubmit
+        </title>
+	</head>
+	<body>
+		<form id="form" onSubmit="logSubmit(event)">
+            <label>Text field: <input type="text"id="name"></label>
+            <br><br>
+            <button type="submit">Submit</button>
+          </form>
+          <p id="log"></p>          
+        <script>
+            function logSubmit(event) 
+            {
+                var d = document.getElementById("name").value;
+                log.textContent = `Hello ${d}`;
+                event.preventDefault();
+            }
+            const form = document.getElementById('form');
+            const log = document.getElementById('log');
+            form.addEventListener('submit', logSubmit);
+
+		</script>
+	</body>
+</html>				

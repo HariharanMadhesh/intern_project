@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Table From Array
+        </title>
+    </head>
+    <body>
+        <table id="fetch" border="2" cellspacing="1" cellpadding="8" class="table">
+            <tr>
+                <th>Subject No</th>
+                <th>Mark</th>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            var array =
+                        [
+                            ["Subject 1",100],
+                            ["Subject 2",100],
+                            ["Subject 3",100],
+                            ["Subject 4",100],
+                            ["Subject 5",100],
+                            ["Subject 6",100],
+                            ["Subject 7",100]
+                        ];
+            fetch = document.getElementById('fetch');
+            for(var i=0; i <array.length; i++)
+            {
+                var newRow = fetch.insertRow(fetch.length);
+                for(var j=0; j<array[i].length; j++)
+                {
+                    var cell = newRow.insertCell(j);
+                    cell.innerHTML = array[i][j];
+                }
+            }
+
+        </script>
+    </body>
+</html>

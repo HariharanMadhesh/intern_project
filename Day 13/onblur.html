@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            onblur
+        </title>
+		<style>
+			body {
+				text-align:center;
+			}
+			input {
+				margin-top:7px;
+                width: 200px;
+				border:1px solid black;
+				border-radius:3px;
+			}
+		</style>
+    </head>
+	<body >
+		<h2>onblur attribute</h2>
+		Username: <input type="text" id="GFG" onblur="Geeks()" placeholder="Type something & lose focus">
+		<script>
+		function Geeks()
+        {
+			var y = document.getElementById("GFG");
+			y.value = y.value.toUpperCase();
+		}
+		</script>			
+    </body>
+</html>

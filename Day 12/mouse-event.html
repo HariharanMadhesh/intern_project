@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <button onclick="clk()">Click me</button>
+        <p id="clk"></p>
+        <br>
+        <button ondblclick="dblclk()">Double Click me</button>
+        <p id="dblclk"></p>
+        <br>
+        <img onmousemove="bigImg(this)" onmouseout="normalImg(this)" src="1.jpeg" width="150" height="150">
+        <p id ="mouse-up-down" onmousedown="down()" onmouseup="up()" onmouseover="over(this)" onmouseout="out(this)" onwheel="weel(this)">
+            Place the cursor on the above picture to perform a onmousemove and onmouseout events.
+            <br>
+            Place the  cursor on this text area to perform a onmouseover events.
+            <br>
+            And Roll the wheel to perform onwheel events.
+            <br>
+            Click on this paragraph area to perform a mouse up and mouse down events.
+        </p>
+
+        <script>
+            function clk()
+            {
+                document.getElementById("clk").innerHTML = "Hello I'm dharanesh";
+            }
+            function dblclk()
+            {
+                document.getElementById("dblclk").innerHTML = "Am studing Computer Engineering, Final Year";
+            }
+            function down()
+            {
+                document.getElementById("mouse-up-down").style.color = "blue";
+            }
+            function up()
+            {
+                document.getElementById("mouse-up-down").style.color = "yellow";
+            }
+            function bigImg(x)
+            {
+                x.style.height = "200px";
+                x.style.width = "200px";
+            }
+
+            function normalImg(x)
+            {
+                x.style.height = "150px";
+                x.style.width = "150px";
+            }
+            function over(y)
+            {
+                y.style.color = "green"; 
+            }
+            function weel(z)
+            {
+                z.style.fontSize = "30px";
+            }
+            function out(y)
+            {
+                y.style.color = "black";
+            }
+        </script>
+    </body>
+</html>

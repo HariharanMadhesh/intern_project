@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <title>
+           Checking the Number 
+        </title>
+    </head>
+    <body>
+        <p id="final"></p>
+        <script type="text/javascript">
+        const value = prompt("Enter a number: ");
+        if(value== 0) 
+        {
+            document.getElementById("final").innerHTML = "The given number is zero.";
+        }
+        else if (value > 0)
+        {
+            document.getElementById("final").innerHTML = "The given number is positive.";
+        }
+        else if (value < 0)
+        {
+            document.getElementById("final").innerHTML = "The given number is negative.";
+        }
+        </script>
+    </body>

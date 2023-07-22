@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+		<title>
+            onchange
+        </title>
+	</head>
+	<body>
+        <p>Choose Subject:</p>
+		<select id="oncng" onchange="oncng()">
+            <option value="Data Structure">
+                Data Structure
+            </option>
+            <option value="Algorithm">
+                Algorithm
+            </option>
+            <option value="Computer Network">
+                Computer Network
+            </option>
+            <option value="Operating System">
+                Operating System
+            </option>
+            <option value="HTML">
+                HTML
+            </option>
+            <option value="Python">
+                Python
+            </option>
+		</select>
+		<p id="oc-1"></p>
+		<script>
+			function oncng()
+            {
+				var x = document.getElementById("oncng").value;
+				document.getElementById("oc-1").innerHTML = "Selected Subject: " + x;
+			}
+		</script>
+	</body>
+</html>				

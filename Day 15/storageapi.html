@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Storage API
+        </title>
+        <style>
+            body
+            {
+                padding-top: 200px;
+                color: rgb(93, 96, 236);
+                text-align: center;
+                font-size: 30px;
+                margin-top: 30px;
+                font-style: oblique;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            if(typeof(Storage)!=="undefined")
+            {
+                localStorage.setItem("name","SIBI");
+                localStorage.setItem("native", "CBE");
+                document.write("Hi am "+" "+localStorage.name+" "+"from" +" "+ localStorage.native);
+            }
+            else
+            {
+                alert("Sorry! your browser is not supporting the browser")
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,54 @@
+body{
+	user-select: none;
+	overflow-y: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+} 
+h3{
+  text-align: center;
+}
+form {
+  border: 3px solid #f1f1f1;
+  background: rgba(53, 43, 182, 0.801);
+  border-radius: 10px;
+}
+input[type=text], input[type=password]
+{
+  width: 100%;
+  border-radius: 6px;
+  padding: 12px 20px;
+  margin: 10px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+button
+{
+	width: 50%;
+	height: 40px;
+	margin: 10px auto;
+	justify-content: center;
+	display: block;
+	color: #ff3300;
+	background: #3b878a;
+	font-size: 1em;
+    font-weight: bold;
+	margin-top: 20px;
+	outline: none;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.container 
+{
+  padding: 16px;
+}
+span.psw
+{
+  
+  float: right;
+  padding-top: 0px;
+  padding-bottom: 16px;
+}

@@ -1,0 +1,32 @@
+*{
+	margin: 0;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: rgb(241, 152, 43);
+	height: 600px;
+	font-family:'Times New Roman', Times, serif;
+	color: rgb(211, 218, 208);
+}
+
+table{
+	width:  800px;
+	margin: 30px auto;
+}
+
+table th{
+	text-emphasis-color: black;
+	padding: 0px 0;
+background-color: rgba(170, 68, 211, 0.685);
+	border:  thin solid #d4d4d4;
+}
+
+table td{
+	padding: 5px;
+	border:  thin solid #c00909;
+	width: 12%;
+	text-align: center;
+	background-color: rgba(81, 83, 228, 0.747);
+}

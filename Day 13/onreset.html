@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            onreset
+        </title>
+    </head>
+    <body>
+        <p>Enter a text to get uppercase</p>
+        <form onreset="set()">
+            <input type="text" id="inputtext" oninput="infun()">
+            <input type="reset">
+        </form>
+        <p id="val"></p>
+        <script>
+            function infun()
+            {
+                var d = document.getElementById("inputtext").value;
+                document.getElementById("val").innerHTML = "The input text's uppercase is "+d.toUpperCase();
+            }
+            function set()
+            {
+                alert("Do you want to reset");
+            }
+        </script>
+    </body>
+</html>

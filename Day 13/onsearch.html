@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            onsearch
+        </title>
+    </head>
+    <body>
+        <input type="search" id="inputtext" onsearch="search()">
+        <p id="result"></p>
+        <script>
+            function search()
+            {
+                var d = document.getElementById("inputtext").value;
+                document.getElementById("result").innerHTML = "You are looking for "+ d;
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+           History API
+        </title>
+        <style type="text/css">
+            button
+            {
+                background: rgb(3, 140, 252);
+                font-size: 15px;
+                font-weight: bolder;
+                margin-top: 20px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 30px;
+                width: 150px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="len"></p>
+        <p>Since this is a new window frame, history.length will always return 1.</p>
+        <button onclick="history.forward()">
+            Go Forward
+        </button>
+        <br><br>
+        <button onclick="history.back()">
+            Go Back
+        </button>
+        <br><br>
+        <button onclick="history.go(-2)">
+            Go Back Pages
+        </button>
+        <br><br>
+        <button>
+            <a href="geolocationapi.html">
+                geolocations
+            </a>
+        </button>
+        <script type="text/javascript">
+            let length = window.history.length;
+            document.getElementById("len").innerHTML = length;
+        </script>
+    </body>
+</html>

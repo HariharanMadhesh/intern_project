@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Worker API
+        </title>
+        <style>
+            button
+            {
+                background: rgb(141, 196, 13);
+                font-size: 15px;
+                font-weight: bolder;
+                margin-top: 20px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 30px;
+                width: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="worker">
+            <label>
+                Enter the number to find the square
+            </label>
+            <br><br>
+            <input type="text" name="num" id="num">
+            <br>
+            <button id="submit">
+                Submit
+            </button>
+            <br>
+            <div id="text"></div>
+        </div>
+        <script type="text/javascript">
+            var worker= new Worker("worker.js");
+            worker.onmessage= function(event)
+            {
+                document.getElementById("text").innerText= event.data;
+            }
+            document.getElementById("submit").onclick= function()
+            {
+                var num= document.getElementById("num").value;
+                worker.postMessage(num);
+            }
+        </script>
+    </body>
+</html>

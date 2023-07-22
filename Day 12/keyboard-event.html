@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Keyboard Events
+        </title>
+    </head>
+    <body>
+        <p>Press and hold a key inside the text field to set a red background color. Release the key to set a green background color.</p>
+        <input type="text" id="key" onkeydown="keydownFunction()" onkeyup="keyupFunction()"><br><br>
+        <p>Type anythining onthe input area to perfotm a onkeypress action</p>
+        <input type="text" onkeypress="myFunction()">
+        <script>
+            function keydownFunction() {
+                document.getElementById("key").style.backgroundColor = "red";
+            }
+
+            function keyupFunction() {
+                document.getElementById("key").style.backgroundColor = "green";
+            }
+            function myFunction() {
+                alert("You pressed a key inside the input field");
+            }
+        </script>
+    </body>
+</html>

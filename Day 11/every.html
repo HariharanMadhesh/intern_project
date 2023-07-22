@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            every()
+        </title>
+    </head>
+    <body>
+        <script>
+            function test(element, index, array)
+            {
+                return index < 4;
+            }
+            document.writeln([21,32,2,43].every(test)+"<br>");
+            document.writeln([21,32,2,43,35].every(test));
+        </script>
+    </body>
+</html>

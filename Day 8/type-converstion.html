@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+    <head>
+        <title>
+            Type converstion
+        </title>
+        <script>
+            let y = "5";
+            let x = + y;
+            document.getElementById("a1").innerHTML = typeof y + "<br>" + typeof x;
+
+            let z = 123;
+            document.getElementById("a2").innerHTML = z.toString() + "<br>" + (1352).toString() ;
+
+            document.getElementById("a3").innerHTML = String(false) + " " + String(true) + "<br>" + false.toString() + " " + true.toString()
+        </script>
+    </head>
+    <body>
+        <p id="a1"></p>
+        <br>
+        <p id="a2"></p>
+        <br>
+        <p id="a3"></p>
+    </body>
+</html>

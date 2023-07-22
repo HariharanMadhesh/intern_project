@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            oninput
+        </title>
+    </head>
+    <body>
+        <form>
+            <p>Enter a text to get uppercase</p>
+            <input type="text" id="inputtext" oninput="infun()">
+            <p id="val"></p>
+        </form>
+        <script>
+            function infun()
+            {
+                var d = document.getElementById("inputtext").value;
+                document.getElementById("val").innerHTML = "The input text's uppercase is "+d.toUpperCase();
+            }
+        </script>
+    </body>
+</html>

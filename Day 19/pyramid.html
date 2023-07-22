@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            pyramid
+        </title>
+    </head>
+    <body>
+        <p>Use console to see output.</p>
+        <p>Give Input as <i><b>pyramidComplete(values).</b></i></p>
+        <script type="text/javascript">
+            
+
+let pyramidComplete = (rows) => {
+  
+    for(let i = 1; i <= rows; i++){
+      let str = '';
+      
+      //Add the white space to the left
+      for(let k = 1; k <= (rows - i); k++){
+        str += ' ';
+      }
+      
+      //Add the '*' for each row
+      for(let j = 0; j != (2 * i - 1); j++){
+        str += '*';
+      }
+      
+      //Add the white space to the right
+      for(let k =  i + 1; k <= rows; k++){
+        str += ' ';
+      }
+      
+       //Print the pyramid pattern for each row
+      console.log(str);
+    }
+ }
+ </script>
+    </body>
+</html>

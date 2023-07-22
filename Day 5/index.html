@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon" href="https://static.meeshosupply.com/web/meesho-logo-fav.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/search.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <title>Online Shopping Site for Fashion, Electronics, Home & More | Meesho</title>
+</head>
+<body> 
+     <!-- Navigation Bar -->
+    <section class="navbar">
+      <div class="uppernav">
+        <a href="index.html"><img
+          src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png"
+          alt="logo"
+          class="logo"
+        /></a>
+        <div class="navSearch">
+          <img
+            src="https://i.postimg.cc/90c6jfMm/search-interface-symbol.png"
+            alt="search"
+            class="NavSearchIcon"
+          />
+          <input
+            type="text"
+            id="keyword"
+            class="searchContainer"
+            placeholder="Try Saree,Kurthi or Seach by Product Code"
+            onkeypress="handleKeyPress(event)"
+          />
+        </div>
+        <div class="navRightSec">
+          <div class="navAppPromo">
+            <img
+              src="https://i.postimg.cc/sXqr2Fz4/smartphone.png"
+              alt="app"
+              class="navAppIcon"
+            />
+            <span id="tagDwn">Download App</span>
+          </div>
+          <span class="navSuplier">Become a Supplier</span>
+          <div class="navProfile" onclick="window.location.href='SignUpPage.html'">
+            <img
+              src="https://i.postimg.cc/wjtLkcVz/user.png"
+              alt="account"
+              class="navAccountIcon"
+            />
+            <span
+              class="SignUpHover"
+              >Profile</span
+            >
+          </div>
+          <div class="navcart" onclick="window.location.href='CartPage.html'">
+            <img
+              src="https://i.postimg.cc/sXBgkwMf/bag.png"
+              alt="cart"
+              class="cartIcon"
+            />
+            <span
+              class="SignUpHover"
+              onclick="window.location.href='CartPage.html'"
+              >Cart</span
+            >
+          </div>
+          <div id="cart-item-counter">0</div>
+        </div>
+      </div>
+      <div class="bottomNav">
+        <div class="nav-menu">
+          <ul>
+            <li class="dropdown" onclick="window.location.href='viewall.html'">View All</li>
+            <li class="dropdown" onclick="window.location.href='WomenWestern.html'">Women Western
+              <div class="submenu">
+                <div class="subCat">
+                  <span class="catHeading">Topwear</span>
+                  <span>Dresses</span>
+                  <span>Tops</span>
+                  <span>Sweaters</span>
+                  <span>Jumpsuits</span>
+                </div>
+                <div class="subCat" style="margin-left: 1em;">
+                  <span class="catHeading">Bottomwear</span>
+                  <span>Jeans</span>
+                  <span>Jeggings</span>
+                  <span>Palazzos</span>
+                  <span>Shorts</span>
+                  <span>Skirts</span>
+                </div>
+              </div>
+            </li>
+            <li onclick="window.location.href='Jewellery.html'">Jewellery & Accessories</li>
+            <li onclick="window.location.href='Men.html'">Men</li>
+            <li>Beauty & Health</li>
+            <li>Bath & Body</li>
+            <li>Bags & Footwear</li>
+            <li>Home & Kitchen</li>
+            <li>Kids</li>
+            <li>Electronics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  <section class="blurBack"></section>
+  <div class="container-lg my-3">
+    <div id="myCarousel" class="carousel slide">
+        <!-- Carousel indicators -->
+        <ol class="carousel-indicators">
+            <li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+            <li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+        </ol>
+    
+        <!-- Wrapper for carousel items -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="1.webp" class="d-block w-30" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="2.webp" class="d-block w-30" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="3.webp" class="d-block w-30" alt="Slide 3">
+        </div>
+    
+        <!-- Carousel controls -->
+        <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon-black"></span>
+        </a>
+    </div>
+</div>
+</body>
+</html>

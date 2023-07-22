@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            Web API
+        </title>
+        <style>
+            body
+            {
+                padding-top: 200px;
+            }
+            button
+            {
+                background: rgba(70, 208, 226, 0.658);
+                font-size: 15px;
+                font-weight: bolder;
+                margin-top: 20px;
+                outline: none;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                height: 30px;
+                width: 150px;
+            }
+        </style>
+    </head>
+    <body align="center">
+        <p>Using web api getting the geograpical coordinate</p>
+        <button onclick="getLocation()">Get coordinates</button>
+        <p id="demo"></p>
+        <script type="text/javascript">
+            const x = document.getElementById("demo");
+            function getLocation()
+            {
+                try
+                {
+                    navigator.geolocation.getCurrentPosition(showPosition);
+                }
+                catch
+                {
+                    x.innerHTML = err;
+                }
+            }
+            function showPosition(position)
+            {
+                x.innerHTML = "Hello, there your geograpical coordinates are <br> Latitude: " + position.coords.latitude +"<br> Longitude: " + position.coords.longitude;
+            }
+        </script>
+    </body>
+</html>
